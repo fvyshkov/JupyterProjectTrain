@@ -14,9 +14,6 @@ TODO
 
 ### 2) How to make JSON queryable alongside CSV dimensions
 - Use a query engine (DuckDB) to represent all data entities as SQL tables
-- Get and output answer for Q1 through SQL-query
-- Get and output answer for Q2 through SQL-query
-- Get and output answer for Q through SQL-query
 
 ### 3) Final table/model structure 
 - Final tables structure is same as input! We could extract required data by SQL-queries 
