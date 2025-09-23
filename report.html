@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Streaming Analytics Report</title>
+
+<style>
+body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; color: #222; }
+h1 { font-size: 28px; margin-bottom: 8px; }
+h2 { font-size: 20px; margin-top: 24px; }
+.card { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 16px; }
+.kpi { font-size: 36px; font-weight: 700; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; }
+th { background: #f3f3f3; text-align: left; }
+small { color: #666; }
+</style>
+
+</head>
+<body>
+  <h1>Streaming Analytics Report</h1>
+  <small>Generated: 2025-09-23 15:46:50</small>
+
+  <div class="card" style="margin-top:16px"> 
+    <h2>Q1. % of new users with ≥30s watch time in first session</h2>
+    <div class="kpi">93.54%</div>
+  </div>
+
+  <div class="card" style="margin-top:16px"> 
+    <h2>Q2. Genres with highest 2nd-session retention within 3 days</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>genre</th>
+      <th>retention_3d_pct</th>
+      <th>returned_users_3d</th>
+      <th>total_users</th>
+      <th>first_session_watch_time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>horror</td>
+      <td>90.70</td>
+      <td>39</td>
+      <td>43</td>
+      <td>2707.00</td>
+    </tr>
+    <tr>
+      <td>sci-fi</td>
+      <td>82.14</td>
+      <td>23</td>
+      <td>28</td>
+      <td>1716.00</td>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>80.00</td>
+      <td>32</td>
+      <td>40</td>
+      <td>2640.00</td>
+    </tr>
+    <tr>
+      <td>drama</td>
+      <td>75.76</td>
+      <td>25</td>
+      <td>33</td>
+      <td>1986.00</td>
+    </tr>
+    <tr>
+      <td>romance</td>
+      <td>75.00</td>
+      <td>24</td>
+      <td>32</td>
+      <td>2317.00</td>
+    </tr>
+    <tr>
+      <td>comedy</td>
+      <td>73.33</td>
+      <td>22</td>
+      <td>30</td>
+      <td>2375.00</td>
+    </tr>
+    <tr>
+      <td>documentary</td>
+      <td>63.16</td>
+      <td>12</td>
+      <td>19</td>
+      <td>1238.00</td>
+    </tr>
+    <tr>
+      <td>fantasy</td>
+      <td>62.50</td>
+      <td>15</td>
+      <td>24</td>
+      <td>1675.00</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <div class="card" style="margin-top:16px"> 
+    <h2>Q3. Device OS / App versions with highest drop-off</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>device_os</th>
+      <th>app_version</th>
+      <th>dropoff_rate_pct</th>
+      <th>dropoff_sessions</th>
+      <th>total_first_sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>macOS</td>
+      <td>1.0.0</td>
+      <td>16.67</td>
+      <td>2.00</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>2.0.0</td>
+      <td>15.38</td>
+      <td>2.00</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>macOS</td>
+      <td>1.2.0</td>
+      <td>14.29</td>
+      <td>2.00</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>1.2.0</td>
+      <td>13.33</td>
+      <td>2.00</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td>2.1.0</td>
+      <td>13.33</td>
+      <td>2.00</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td>2.0.0</td>
+      <td>12.50</td>
+      <td>2.00</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td>1.2.0</td>
+      <td>12.50</td>
+      <td>2.00</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td>1.1.0</td>
+      <td>12.50</td>
+      <td>1.00</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>macOS</td>
+      <td>1.1.0</td>
+      <td>12.50</td>
+      <td>2.00</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>1.1.0</td>
+      <td>11.11</td>
+      <td>2.00</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>1.1.0</td>
+      <td>7.69</td>
+      <td>1.00</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>macOS</td>
+      <td>2.0.0</td>
+      <td>6.67</td>
+      <td>2.00</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>1.0.0</td>
+      <td>6.67</td>
+      <td>1.00</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>macOS</td>
+      <td>2.1.0</td>
+      <td>5.26</td>
+      <td>1.00</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>2.1.0</td>
+      <td>5.00</td>
+      <td>1.00</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>1.0.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>2.1.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>1.2.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>2.0.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Android</td>
+      <td>1.0.0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</body>
+</html>
