@@ -45,15 +45,17 @@ flowchart TB
 - Get and output answer for Q3 through SQL-query
 
 ```mermaid
-flowchart TB
-  classDef big stroke-width:2px;
+flowchart TD
+  classDef big fill:#f3f4f6,stroke:#111,stroke-width:2px,color:#111,font-size:16px;
 
   S1["Use a query engine (DuckDB) to represent all data entities as SQL tables"]:::big
   S2["Get and output answer for Q1 through SQL-query"]:::big
   S3["Get and output answer for Q2 through SQL-query"]:::big
   S4["Get and output answer for Q3 through SQL-query"]:::big
 
-  S1 --> S2 --> S3 --> S4
+  S1 --> S2
+  S2 --> S3
+  S3 --> S4
 ```
 
 ### 3) Final table/model structure 
