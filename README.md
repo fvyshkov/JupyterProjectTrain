@@ -11,6 +11,25 @@ TODO
 
 ### 1) Diagram: raw JSON to staging to analytics layer
 
+```mermaid
+flowchart LR
+  subgraph Raw
+    E[events.jsonl]
+    U[users.csv]
+    V[videos.csv]
+    D[devices.csv]
+  end
+
+  E --> L[Landing / Raw]
+  U --> L
+  V --> L
+  D --> L
+
+  L --> S[Staging]
+  S -->|normalize, cast types, dedupe| C[Curated]
+  C --> A[Analytics (DuckDB / Parquet)]
+  A --> N[Notebooks / BI]
+```
 
 ### 2) How to make JSON queryable alongside CSV dimensions
 - Use a query engine (DuckDB) to represent all data entities as SQL tables
